@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다이스키 일본어 학습 포털 — Minwoo Lee</title>
+<meta name="description" content="다이스키 일본어 학습 포털 — Minwoo Lee">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../../style.css">
+</head><body>
+<header class="top"><div class="wrap"><a class="logo" href="../../">Minwoo Lee</a><nav><a href="../../" class="">소개</a><a href="../../projects/" class="on">프로젝트</a><a href="../../weekly-review/" class="">Weekly Review</a></nav>
+<a class="lang" href="../../en/projects/daiski/">English</a></div></header>
+<main class="wrap"><p><a href="../">← 프로젝트 목록</a></p><section class="hero"><p class="kicker">Project</p><h1>다이스키 일본어 학습 포털</h1><p class="sub">Daisuki Japanese Study Portal</p><p class="headline">교재 12~14과의 단어·문장·숙제·모의고사를 한 페이지에서 듣고 말하고 쓰며 익히기</p><div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Web Speech API</span><span class="tag">MediaRecorder</span><span class="tag">localStorage</span><span class="tag">GitHub Pages</span></div><dl class="meta"><dt>역할</dt><dd>학습 설계·기능 기획, AI 에이전트와 함께 바이브 코딩으로 구현</dd><dt>기간</dt><dd>2026-11 ~</dd></dl></section><div class="shots"><img src="../../projects/daiski/01.png" alt="다이스키 일본어 학습 포털" loading="lazy"></div><h2>문제</h2>
+<ul><li>일본어 수업 교재(다이스키 상권)의 단어, 단문, 숙제, 시험 대비가 종이와 음원 파일로 흩어져 있다.</li><li>혼자 복습할 때 발음을 확인하고, 내 발음을 녹음해 비교하고, 외운 것과 못 외운 것을 나눠 보기 어렵다.</li></ul>
+<h2>해결</h2>
+<ul><li><strong>한 페이지 포털:</strong> 12과·13과·14과(단문 104문장, 단어 150개)를 과별로 나눠 단어장, 단문 표현, 문형 정리, 숙제, 실전 모의고사를 한곳에 모았다.</li><li><strong>듣기:</strong> 문장마다 원어민 음성(교재 음원)과 읽어 주기 기능을 쓰고, 재생 속도(0.8x·1.0x·1.2x)를 고를 수 있다.</li><li><strong>말하기:</strong> 10문장을 차례로 녹음하고 하나로 합쳐 들어 볼 수 있다.</li><li><strong>외우기:</strong> 카드 암기, 단어 퀴즈, 단어 조각 맞추기, 직접 타이핑, 미암기 복습 모드. 한자 위에 읽는 법(후리가나)을 표시한다.</li><li><strong>쓰기·숙제:</strong> '읽어 봅시다' 지문을 쓰고 번역하고, 인쇄해 제출할 수 있다.</li><li><strong>학습 기록:</strong> 사용자별 진행 상황을 브라우저에 저장한다.</li></ul>
+<h2>내가 한 일</h2>
+<ul><li>수업 진도에 맞춰 과별 구성과 복습 순서(듣기 → 따라 말하기 → 외우기 → 시험)를 설계했다.</li><li>교재 내용을 단어·문장·문형 단위로 정리하고, 퀴즈와 모의고사 문항 형식을 정했다.</li><li>AI 에이전트와 함께 화면과 기능을 구현하고, GitHub Pages로 공개했다.</li></ul>
+<h2>기술·구조</h2>
+<ul><li>서버 없이 HTML 파일 하나로 동작한다 (음원도 파일 안에 포함). GitHub Pages에 올리면 바로 열린다.</li><li>발음 듣기는 브라우저의 음성 합성(Web Speech API), 녹음은 MediaRecorder를 쓴다.</li><li>학습 기록과 사용자 구분은 브라우저 저장소(localStorage)에 둔다.</li></ul>
+<h2>다음 계획</h2>
+<ul><li>로그인으로 인증된 사람만 볼 수 있게 접근 제한</li><li>15과 이후 단원 추가</li></ul></main>
+<footer><div class="wrap">© Minwoo Lee · 업데이트 2026-11-09</div></footer>
+</body></html>

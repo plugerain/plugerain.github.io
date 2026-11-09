@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daisuki Japanese Study Portal — Minwoo Lee</title>
+<meta name="description" content="Daisuki Japanese Study Portal — Minwoo Lee">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../../../style.css">
+</head><body>
+<header class="top"><div class="wrap"><a class="logo" href="../../../en/">Minwoo Lee</a><nav><a href="../../../en/" class="">About</a><a href="../../../en/projects/" class="on">Projects</a><a href="../../../en/weekly-review/" class="">Weekly Review</a></nav>
+<a class="lang" href="../../../projects/daiski/">한국어</a></div></header>
+<main class="wrap"><p><a href="../">← All projects</a></p><section class="hero"><p class="kicker">Project</p><h1>Daisuki Japanese Study Portal</h1><p class="headline">Learn lessons 12–14 of a Japanese textbook in one page — listen, speak, write and test</p><div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Web Speech API</span><span class="tag">MediaRecorder</span><span class="tag">localStorage</span><span class="tag">GitHub Pages</span></div><dl class="meta"><dt>Role</dt><dd>Learning design and feature planning; built with AI agents (vibe coding)</dd><dt>Period</dt><dd>2026-11 ~</dd></dl></section><div class="shots"><img src="../../../projects/daiski/01.png" alt="Daisuki Japanese Study Portal" loading="lazy"></div><h2>Problem</h2>
+<ul><li>The vocabulary, short sentences, homework and test prep for my Japanese class textbook (Daisuki, Book 1) are scattered across paper and audio files.</li><li>Studying alone, it is hard to check pronunciation, record and compare my own voice, and separate what I have memorized from what I have not.</li></ul>
+<h2>Solution</h2>
+<ul><li><strong>One-page portal:</strong> lessons 12, 13 and 14 (104 sentences, 150 words) each have a word list, short expressions, grammar patterns, homework and a mock exam in one place.</li><li><strong>Listening:</strong> every sentence has native audio (textbook audio) and read-aloud, with playback speed 0.8x / 1.0x / 1.2x.</li><li><strong>Speaking:</strong> record ten sentences in a row and play them back as one clip.</li><li><strong>Memorizing:</strong> flash cards, word quiz, word-piece puzzle, typing practice and a review mode for unlearned items. Kanji show their readings (furigana).</li><li><strong>Writing and homework:</strong> write and translate the reading passages, then print them to hand in.</li><li><strong>Progress:</strong> each user's progress is saved in the browser.</li></ul>
+<h2>What I did</h2>
+<ul><li>Designed the per-lesson structure and the review flow (listen → repeat → memorize → test) to match the class schedule.</li><li>Organized the textbook content into words, sentences and patterns, and defined the quiz and mock-exam formats.</li><li>Built the screens and features with AI agents and published the site on GitHub Pages.</li></ul>
+<h2>Tech and architecture</h2>
+<ul><li>Runs as a single HTML file with no server (audio is embedded). Publishing it to GitHub Pages makes it live immediately.</li><li>Read-aloud uses the browser's speech synthesis (Web Speech API); recording uses MediaRecorder.</li><li>Progress and user profiles are kept in browser storage (localStorage).</li></ul>
+<h2>Next</h2>
+<ul><li>Restrict access to signed-in users</li><li>Add lessons 15 and beyond</li></ul></main>
+<footer><div class="wrap">© Minwoo Lee · Updated 2026-11-09</div></footer>
+</body></html>
